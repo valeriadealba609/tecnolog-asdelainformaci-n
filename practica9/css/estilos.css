@@ -1,0 +1,25 @@
+body {
+   background: #9b2a35;
+background: linear-gradient(90deg, rgba(155, 42, 53, 1) 13%, rgba(156, 58, 112, 1) 58%, rgba(212, 28, 144, 1) 93%);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2,p {
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Libertinus Keyboard", system-ui;
+    font-size: 40px;
+
+}
+
+h2 {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 30px;
+}
+
+p {
+     font-family: "Epunda Slab", serif;
+     font-size: 25px;
+}
