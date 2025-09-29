@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(212, 196, 55);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+#encabezado {
+    background-color: rgb(117, 184, 207);
+    color: white;
+    text-align: center;
+    border: 5px solid rgb(81, 140, 222);
+    margin: 40px auto 24px auto;
+    border-radius: 50px;
+    box-shadow: 19px 13px 32px -4px rgba(50,222,241,0.75);
+    -webkit-box-shadow: 19px 13px 32px -4px rgba(50,222,241,0.75);
+    -moz-box-shadow: 19px 13px 32px -4px rgba(50,222,241,0.75);
+}
