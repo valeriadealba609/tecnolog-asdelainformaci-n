@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practica 19!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #ffeaf4; /* rosa pastel de fondo */
+      color: #6a1b9a;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border: 2px solid #e91e63; /* tono fucsia principal */
+      box-shadow: 0 0 25px rgba(233, 30, 99, 0.3);
+    }
+
+    .banner {
+      background-color: #f06292; /* rosa fuerte */
+      border-bottom: 2px solid #e91e63;
+      text-align: center;
+      padding: 2rem;
+      font-weight: bold;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .nav {
+      background-color: #f8bbd0; /* rosa medio */
+      border-bottom: 2px solid #e91e63;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #880e4f;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      border-bottom: 2px solid #e91e63;
+    }
+
+    .main {
+      flex: 2;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fce4ec; /* rosa clarito */
+      border-right: 2px solid #e91e63;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #ad1457;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .picture, .about, .tweets {
+      border-bottom: 2px solid #e91e63;
+      text-align: center;
+      padding: 2rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background-color: #f48fb1; /* rosa medio brillante */
+      color: white;
+    }
+
+    .about {
+      background-color: #ec407a; /* rosa más fuerte */
+    }
+
+    .tweets {
+      flex-grow: 1;
+      background-color: #d81b60; /* rosa fucsia intenso */
+      color: white;
+    }
+
+    .footer {
+      background-color: #f06292;
+      text-align: center;
+      padding: 1.5rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: white;
+      border-top: 2px solid #e91e63;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+      .main {
+        border-right: none;
+        border-bottom: 2px solid #e91e63;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        font-size: 1.6rem;
+        padding: 1.5rem;
+      }
+      .nav, .footer {
+        font-size: 1rem;
+      }
+      .main, .picture, .about, .tweets {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">BANNER</div>
+    <div class="nav">NAVIGATION LINKS</div>
+    <div class="content">
+      <div class="main">MAIN CONTENT</div>
+      <div class="sidebar">
+        <div class="picture">PICTURE</div>
+        <div class="about">ABOUT ME BLURB</div>
+        <div class="tweets">RECENT TWEETS</div>
+      </div>
+    </div>
+    <div class="footer">FOOTER</div>
+  </div>
+</body>
+</html>
+
+
