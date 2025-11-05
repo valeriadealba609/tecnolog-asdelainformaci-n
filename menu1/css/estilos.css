@@ -1,0 +1,236 @@
+body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3b166; /* Naranja rojizo fuerte de fondo */
+            background-image: linear-gradient(135deg, #e3a977 0%, #f1c254 100%); /* Degradado Naranja a Amarillo */
+            color: #fff; /* Texto principal en blanco */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .menu-container {
+            max-width: 650px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: #fff; /* Fondo del menú en blanco para contraste */
+            color: #333; /* Texto dentro del contenedor en gris oscuro */
+            padding: 30px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra más dramática */
+            border: 8px solid #ad7f3b; /* Borde verde brillante */
+            position: relative;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        /* Logo y Títulos */
+        .logo {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 5px dashed #d32f2f; /* Línea de guiones roja */
+            position: relative;
+            z-index: 1;
+        }
+        .logo img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-color: #d32f2f; /* Rojo */
+            border-width: 1px;
+            border-style: solid;
+            box-shadow: 0px 0px 10px rgb(123, 4, 4);
+        }
+        h2 {
+            font-family: 'Pacifico', cursive;
+            color: #d32f2f; /* Rojo */
+            font-size: 2.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 0 #ffb300; /* Sombra amarilla */
+            padding-bottom: 5px;
+            position: relative;
+            z-index: 1;
+        }
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5em;
+            font-weight: 800; /* Extra bold */
+            color: #0288D1; /* Azul vibrante */
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Items del Menú (Tacos, Platos, Bebidas) */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 5px;
+            border-bottom: 2px solid #ffecb3; /* Separador más notorio */
+            align-items: baseline;
+            position: relative;
+            z-index: 1;
+            background-color: #fffde7; /* Color crema suave para el fondo del item */
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .item-name {
+            font-weight: 700;
+            color: #333;
+            font-size: 1.2em;
+            flex-grow: 1;
+            text-transform: uppercase;
+        }
+        .price {
+            font-weight: 800;
+            color: #d84315; /* Naranja rojizo */
+            font-size: 1.4em;
+            margin-left: 20px;
+            border: 2px solid #d84315;
+            padding: 2px 8px;
+            border-radius: 5px;
+            background-color: #ffc977; /* Fondo para el precio */
+        }
+        .guisados-list {
+            list-style: none;
+            padding: 0;
+            columns: 2;
+            column-gap: 30px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            background-color: #f1f8e9; /* Verde muy claro */
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px dashed #4CAF50;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+            font-size: 1.1em;
+        }
+        .guisados-list li {
+            padding: 5px 0;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Contenedor de Imágenes */
+        .guisado-images, .bebidas-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Fijo 2x2 */
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffecb3; /* Amarillo pastel suave */
+            border-radius: 15px;
+            border: 2px solid #ffb300;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        /* Item de Imagen (Tarjeta) */
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-card img {
+            width: 100%;
+            height: 165px; /* Altura de guisados */
+            object-fit: cover;
+            display: block;
+        }
+        .bebidas-images .image-card img {
+            height: 200px; /* Altura de bebidas */
+        }
+        .image-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(211, 47, 47, 0.85); /* Fondo rojo semi-transparente */
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1.0em;
+            text-transform: uppercase;
+        }
+        
+        .decorator-line {
+            text-align: center;
+            color: #ffb300; /* Amarillo */
+            margin: 20px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 #d32f2f;
+        }
+
+        .icon { color: #d32f2f; } /* Iconos en rojo */
+
+        @media (max-width: 600px) {
+            /* CAMBIO DE COLOR DE FONDO A UN COLOR SÓLIDO Y VIBRANTE */
+            body {
+                background-color: #ffffff; /* Fondo blanco sólido para móvil */
+                background-image: none; /* Eliminar el degradado en móvil */
+            }
+            
+            .menu-container {
+                width: 95%;
+                padding: 20px 15px;
+                margin: 20px auto;
+            }
+            .menu-container::before, .menu-container::after {
+                display: none;
+            }
+
+            h2 { font-size: 2em; margin-top: 20px; }
+            h3 { font-size: 1.3em; margin-top: 20px; }
+
+            .logo img { max-width: 150px; }
+
+            .guisados-list {
+                columns: 1;
+                font-size: 1.0em;
+                padding: 10px 15px;
+            }
+
+            .item-name { font-size: 1.1em; }
+            .price { font-size: 1.2em; }
+
+            .guisado-images, .bebidas-images {
+                grid-template-columns: 1fr;
+                padding: 10px;
+                gap: 10px;
+            }
+            .image-card img { 
+                height: 140px;
+            }
+            .bebidas-images .image-card img {
+                height: 160px;
+            }
+            .image-label {
+                padding: 6px 0;
+                font-size: 0.9em;
+            }
+            .decorator-line {
+                margin: 10px 0;
+                font-size: 1em;
+            }
+        }   
